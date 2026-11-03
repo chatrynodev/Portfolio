@@ -1,11 +1,3 @@
-  function handleSubmit(e) {
-    e.preventDefault();
-    const data = new FormData(e.target);
-    const name = data.get('prenom') + ' ' + data.get('nom');
-    alert('Merci ' + name + ' ! Votre message a bien été envoyé.\n\n(Connectez ce formulaire à un backend ou un service comme Formspree pour recevoir les messages.)');
-    e.target.reset();
-  }
-
   // Highlight active nav link on scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');

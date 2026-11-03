@@ -844,13 +844,13 @@
         </div>
       </div>
       <div>
-        <form class="form" onsubmit="handleSubmit(event)">
+        <form class="form" action="https://formspree.io/f/xjyypddz" method="POST">
           <div class="form-row">
             <input class="inp" type="text" name="prenom" placeholder="Prénom" required>
             <input class="inp" type="text" name="nom" placeholder="Nom" required>
           </div>
-          <input class="inp" type="email" name="email" placeholder="Adresse email" required>
-          <input class="inp" type="text" name="sujet" placeholder="Sujet">
+          <input class="inp" type="email" name="_replyto" placeholder="Adresse email" required>
+          <input class="inp" type="text" name="_subject" placeholder="Sujet">
           <textarea class="inp" name="message" placeholder="Votre message..." required></textarea>
           <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
             Envoyer le message
