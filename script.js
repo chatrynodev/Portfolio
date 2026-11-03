@@ -23,6 +23,7 @@
           throw new Error(`L’envoi a échoué (erreur ${response.status}). Vérifie les champs et réessaie.`);
         }
 
+        window.alert('Votre message a bien été envoyé. Merci pour votre contact !');
         window.history.replaceState(
           null,
           '',
