@@ -1,3 +1,44 @@
+  const contactForm = document.querySelector('.form[action^="https://formspree.io/"]');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      const status = contactForm.querySelector('.form-status');
+      const buttonText = submitButton.textContent;
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Envoi en cours...';
+      status.textContent = '';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) {
+          throw new Error(`L’envoi a échoué (erreur ${response.status}). Vérifie les champs et réessaie.`);
+        }
+
+        window.history.replaceState(
+          null,
+          '',
+          `${window.location.pathname}${window.location.search}#accueil`
+        );
+        window.location.reload();
+      } catch (error) {
+        status.textContent = error instanceof Error
+          ? error.message
+          : 'Une erreur inattendue a empêché l’envoi. Réessaie.';
+        submitButton.disabled = false;
+        submitButton.textContent = buttonText;
+      }
+    });
+  }
+
   // Highlight active nav link on scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
