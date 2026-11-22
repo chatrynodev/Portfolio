@@ -78,9 +78,25 @@
 }
   .hero-inner{
     display:grid;
-    grid-template-columns:1fr auto;
+    grid-template-columns:minmax(0,1fr) 296px;
     gap:3rem;
     align-items:center;
+}
+  .hero-intro{
+    display:flex;
+    align-items:center;
+    gap:1.25rem;
+    margin-bottom:1rem;
+}
+  .hero-logo{
+    display:block;
+    width:82px;
+    height:82px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+  .hero-intro > div{
+    min-width:0;
 }
   .hero-eyebrow{
     display:inline-flex;
@@ -500,11 +516,35 @@
     font-weight:600;
 }
 
+  @media(max-width:800px){
+    .hero-inner{
+      grid-template-columns:minmax(0,1fr) 220px;
+      gap:1.5rem;
+    }
+    .hero-avatar{
+      width:220px;
+      height:220px;
+    }
+    .hero-logo{
+      width:68px;
+      height:68px;
+    }
+  }
+
   @media(max-width:640px){
     nav{padding:0 1rem;}
     .nav-links{display:none;}
     .hero-inner,.cv-cols,.contact-grid{grid-template-columns:1fr;}
-    .hero-avatar{display:none;}
+    .hero-avatar{
+      width:180px;
+      height:180px;
+      justify-self:center;
+    }
+    .hero-logo{
+      width:60px;
+      height:60px;
+    }
+    .hero-intro{gap:1rem;}
     .skills-grid,.int-grid{grid-template-columns:1fr 1fr;}
     .proj-item{grid-template-columns:1fr;}
     .proj-badge{display:none;}
