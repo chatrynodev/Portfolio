@@ -98,9 +98,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/htmlcss1.png",
-      "img/certifications/htmlcss2.png",
-      "img/certifications/htmlcss3.png"
+      "img/certif/html.png"
     ],
 
     link:
@@ -148,9 +146,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/cpp1.png",
-      "img/certifications/cpp2.png",
-      "img/certifications/cpp3.png"
+      "img/certif/c_plus_plus.png"
     ],
 
     link:
@@ -199,9 +195,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/java1.png",
-      "img/certifications/java2.png",
-      "img/certifications/java3.png"
+      "img/certif/java.png"
     ],
 
     link:
@@ -250,9 +244,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/js1.png",
-      "img/certifications/js2.png",
-      "img/certifications/js3.png"
+      "img/certif/javascript.png"
     ],
 
     link:
@@ -301,9 +293,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/git1.png",
-      "img/certifications/git2.png",
-      "img/certifications/git3.png"
+      "img/certif/github.png"
     ],
 
     link:
@@ -351,9 +341,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/php1.png",
-      "img/certifications/php2.png",
-      "img/certifications/php3.png"
+      "img/certif/poophp.png"
     ],
 
     link:
@@ -401,9 +389,7 @@ const certifications = {
     ],
 
     images: [
-      "img/certifications/mvc1.png",
-      "img/certifications/mvc2.png",
-      "img/certifications/mvc3.png"
+      "img/certif/mvc.png"
     ],
 
     link:
@@ -485,11 +471,7 @@ const stages = {
 
     images: [
 
-      "img/stages/stage1-1.jpg",
-
-      "img/stages/stage1-2.jpg",
-
-      "img/stages/stage1-3.jpg"
+      "img/entreprise/logolosiadigital.png"
 
     ]
 
@@ -531,11 +513,7 @@ const stages = {
 
     images: [
 
-      "img/stages/stage2-1.jpg",
-
-      "img/stages/stage2-2.jpg",
-
-      "img/stages/stage2-3.jpg"
+      "img/entreprise/logocholetservices.jpg"
 
     ]
 
